@@ -86,7 +86,7 @@ const doWhat = () => {
   
   
   
-  const findSong = (song = "The Sign ace of base") => {
+  const findSong = (song = "Rock the Casbah") => {
   
   
     let spotify = new Spotify(keys.spotify);
