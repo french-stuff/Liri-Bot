@@ -1,8 +1,10 @@
-require("dotenv").congig();
+require("dotenv").config();
+
+
 const Spotify = require('node-spotify-api');
 const axios = require("axios");
 const fileSystem = require("fs");
-const key = require("./keys.js");
+const keys = require("./keys.js");
 const moment = require('moment');
 
 
@@ -68,7 +70,6 @@ const doWhat = () => {
   Name: ${getback.Title}
   Year: ${getback.Year}
   IMDB rating: ${getback.imdbRating}
-  Rotten Tomatoes rating: ${getback.Ratings[1].Value}
   Country of origin: ${getback.Country}
   Language: ${getback.Language}
   Plot: ${getback.Plot}
@@ -86,7 +87,7 @@ const doWhat = () => {
   
   
   
-  const findSong = (song = "The Clash Rock the Casbah") => {
+  const findSong = (song = "The Sign") => {
   
   
     let spotify = new Spotify(keys.spotify);
