@@ -172,3 +172,47 @@ const doWhat = () => {
     })
     }
   
+    if (command === "concert-this") {
+
+
+        findConcert(query);
+      
+      
+      
+      
+      
+      }
+      else if (command === "spotify-this-song") {
+      
+        findSong(query);
+      
+      }
+      
+      else if (command === "movie-this") {
+        findMovie(query);
+      
+      }
+      
+      else if (command === "do-what-it-says") {
+      
+      
+      
+        doWhat();
+      
+      
+      
+      
+      }
+      
+      
+      else {
+        console.log(`
+      ******************************************************
+      Error: The only valid LIRI commands are the following:
+      concert-this [music artist]
+      spotify-this-song [song name]
+      movie-this [movie name]
+      do-what-it-says - must have command and query separated by a ',' in random.txt
+      ******************************************************
+      `)
+      }
