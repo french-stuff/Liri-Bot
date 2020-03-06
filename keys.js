@@ -1,4 +1,4 @@
-console.log("This Initiating Sequence");
+console.log("This is loaded");
 
 exports.spotify = {
 
